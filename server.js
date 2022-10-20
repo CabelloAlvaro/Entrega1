@@ -7,8 +7,6 @@ const carritoRouter = require("./routes/carrito");
 app.use("/api/productos", productosRouter);
 app.use("/api/carrito", carritoRouter);
 
-app.set("view engine", "ejs");
-
 app.get("/", (req, res) => {
     res.send("Pruebe desde postman")
 });
