@@ -3,7 +3,6 @@ const app = express();
 const productosRouter = require("./routes/productos");
 const carritoRouter = require("./routes/carrito");
 
-//app.use(express.static("public"));
 
 app.use("/api/productos", productosRouter);
 app.use("/api/carrito", carritoRouter);
@@ -11,7 +10,6 @@ app.use("/api/carrito", carritoRouter);
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-    //res.sendFile(__dirname + "/public/index.html");
     res.send("Pruebe desde postman")
 });
 
